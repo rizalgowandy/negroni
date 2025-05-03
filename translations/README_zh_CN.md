@@ -1,5 +1,5 @@
 # Negroni
-[![GoDoc](https://godoc.org/github.com/urfave/negroni?status.svg)](http://godoc.org/github.com/urfave/negroni)
+[![GoDoc](https://godoc.org/github.com/urfave/negroni/v3?status.svg)](http://godoc.org/github.com/urfave/negroni/v3)
 [![Build Status](https://travis-ci.org/urfave/negroni.svg?branch=master)](https://travis-ci.org/urfave/negroni)
 [![codebeat](https://codebeat.co/badges/47d320b1-209e-45e8-bd99-9094bc5111e2)](https://codebeat.co/projects/github-com-urfave-negroni)
 [![codecov](https://codecov.io/gh/urfave/negroni/branch/master/graph/badge.svg)](https://codecov.io/gh/urfave/negroni)
@@ -30,7 +30,7 @@ import (
   "fmt"
   "net/http"
 
-  "github.com/urfave/negroni"
+  "github.com/urfave/negroni/v3"
 )
 
 func main() {
@@ -49,7 +49,7 @@ func main() {
 然后安装 Negroni 包（**注意**：要求 **Go 1.1** 或更高的版本的 Go 语言环境）：
 
 ```
-go get github.com/urfave/negroni
+go get github.com/urfave/negroni/v3
 ```
 
 最后运行刚建好的 server.go 文件:
@@ -162,7 +162,7 @@ Negroni 有一个便利的函数叫 `Run`。 `Run` 接收 addr 地址字符串 [
 package main
 
 import (
-  "github.com/urfave/negroni"
+  "github.com/urfave/negroni/v3"
 )
 
 func main() {
@@ -171,7 +171,7 @@ func main() {
 }
 ```
 
-未提供地址的情况下， `PORT` 系统环境变量会被使用。 若未定义该系统环境变量，默认的地址则会被使用。请参考 [Run](https://godoc.org/github.com/urfave/negroni#Negroni.Run) 的详情说明。
+未提供地址的情况下， `PORT` 系统环境变量会被使用。 若未定义该系统环境变量，默认的地址则会被使用。请参考 [Run](https://godoc.org/github.com/urfave/negroni/v3#Negroni.Run) 的详情说明。
 
 一般来说，使用 `net/http` 方法并将 Negroni 当作处理器传入，这样更灵活，例如:
 
@@ -184,7 +184,7 @@ import (
   "net/http"
   "time"
 
-  "github.com/urfave/negroni"
+  "github.com/urfave/negroni/v3"
 )
 
 func main() {
@@ -285,7 +285,7 @@ import (
   "fmt"
   "net/http"
 
-  "github.com/urfave/negroni"
+  "github.com/urfave/negroni/v3"
 )
 
 func main() {
@@ -321,7 +321,7 @@ package main
 import (
   "net/http"
 
-  "github.com/urfave/negroni"
+  "github.com/urfave/negroni/v3"
 )
 
 func main() {
@@ -348,7 +348,7 @@ package main
 import (
   "net/http"
 
-  "github.com/urfave/negroni"
+  "github.com/urfave/negroni/v3"
 )
 
 func main() {
@@ -381,7 +381,7 @@ package main
 import (
   "net/http"
 
-  "github.com/urfave/negroni"
+  "github.com/urfave/negroni/v3"
 )
 
 func main() {
@@ -414,7 +414,7 @@ import (
   "fmt"
   "net/http"
 
-  "github.com/urfave/negroni"
+  "github.com/urfave/negroni/v3"
 )
 
 func main() {
